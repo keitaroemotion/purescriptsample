@@ -1,4 +1,12 @@
 #!/usr/bin/env sh
 
-bower i purescript-psci-support --save-dev
+# install compiler
+npm install -g purescript
+# install builder
+npm install -g pulp bower
+# create a new project
+pulp init
+pulp build
+pulp test
+bower install purescript-lists --save
 echo /bower_components/ > .gitignore
