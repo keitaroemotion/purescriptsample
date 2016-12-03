@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+bower i purescript-psci-support --save-dev
+echo /bower_components/ > .gitignore
